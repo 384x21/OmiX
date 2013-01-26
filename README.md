@@ -34,15 +34,15 @@ File number 9, with name "FA" is used to draw fatty acid structures. In any give
 
 File number 10, with name "UserSMILES" contains User defined SMILES for lipid species. Our program uses Lipid Maps structure drawing tools to generate structures. Lipid Maps tools do not support all classes of lipids and it might happen that some of the lipids in your dataset are part of those not supported by Lipid Maps. In such cases, user can define their own SMILES. If you do not know which lipids are not supported, just run this program on your dataset(s) with default options. Lipids for which structures were not drawn are written to STDOUT. You can provide SMILES to those lipids by adding them to UserSMILES file and re-run the program.
 
-make sure "bin" folder (provided with this package) is located in the same directory as this README file.
+Make sure "bin" folder (provided with this package) is located in the same directory as this README file.
 
 Last but not the least, there should be no other files in the folder. Our program treats all files in the folder (exluding files named "FA" and "UserSMILES") to be lipidome data that needs analysis.
 
 run the program with following syntax
 
-$ perl 130117_AnalyzeLipidomes.pl <folder_name>
+$ perl AnalyzeLipidomes.pl <folder_name>
 
-e.g: $ perl 130117_AnalyzeLipidomes.pl Test
+e.g: $ perl AnalyzeLipidomes.pl Test
 
 If there are any dependency issues, you will be notified through STDERR or STDOUT.
 
